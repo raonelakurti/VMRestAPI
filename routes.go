@@ -23,7 +23,7 @@ func (conf *Config) NewRouter() *mux.Router {
 		Route{
 			"GetVmsList",
 			"GET",
-			"/vms",
+			"/vmlist",
 			conf.GetVmsList,
 		},
 		Route{
