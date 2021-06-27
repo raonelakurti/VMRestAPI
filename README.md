@@ -4,9 +4,9 @@ Run Locally:
 I have used go mod to maintain dependencies.
 
 $ go build
-$ ./crypto-server
+$ ./VMRestAPI
 
-use below GET http call's to do CRUD Operations.
+use below to perform do list, create, update and destroy
 
 Get Existing VM's info: http://localhost:9000/vmlist
 Create a new VM: http://localhost:9000/createvm
