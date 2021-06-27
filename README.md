@@ -1,4 +1,4 @@
-# VMRestAPI to Perform CURD Operations
+# VMRestAPI to Perform GET, CREATE, DELETE and Update operations.
 
 Run Locally:
 I have used go mod to maintain dependencies.
@@ -97,10 +97,3 @@ DELETE /deletevm
 ```
 
 Output: 200 Response
-
-
-Delete Operation:
-
-DELETE 
-
-
