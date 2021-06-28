@@ -102,6 +102,7 @@ OUTPUT:
 DELETE VM Based out of ID:
 
 DELETE /deletevm
+
 ```
 {
     "id": "0e3d75cf7e444b7c9a2357199f640cb3"
