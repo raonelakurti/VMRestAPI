@@ -3,7 +3,6 @@
 Run Locally: I have used go mod to maintain dependencies.
 
 ```go build
-
 ./VMRestAPI```
 
 Use below to perform Get list, Create, Update and Destroy
