@@ -2,9 +2,9 @@
 
 Run Locally: I have used go mod to maintain dependencies.
 
-$ go build
+```$ go build```
 
-$ ./VMRestAPI
+```$ ./VMRestAPI```
 
 use below to perform do list, create, update and destroy
 
@@ -17,6 +17,7 @@ use below to perform do list, create, update and destroy
 **Delete a VM based on the UUID**: http://localhost:9000/deletevm
 
 **Usage:**
+
 
 ```Create VM:```
 
