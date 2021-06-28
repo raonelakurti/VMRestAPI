@@ -1,12 +1,12 @@
-# VMRestAPI to Perform GET, CREATE, DELETE and Update operations.
+# VMRestAPI to Perform CRUD Operations.
 
 Run Locally: I have used go mod to maintain dependencies.
 
-```$ go build```
+```go build
 
-```$ ./VMRestAPI```
+./VMRestAPI```
 
-use below to perform do list, create, update and destroy
+Use below to perform Get list, Create, Update and Destroy
 
 **Get Existing VM's info**: http://localhost:9000/vmlist
 
