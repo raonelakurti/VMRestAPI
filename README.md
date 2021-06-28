@@ -7,21 +7,21 @@ $ ./VMRestAPI
 
 use below to perform do list, create, update and destroy
 
-Get Existing VM's info: http://localhost:9000/vmlist
+**Get Existing VM's info**: http://localhost:9000/vmlist
 
-Create a new VM: http://localhost:9000/createvm
+**Create a new VM**: http://localhost:9000/createvm
 
-Update VM based out of UUID: http://localhost:9000/updatevm
+**Update VM based out of UUID**: http://localhost:9000/updatevm
 
-Delete a VM based on the UUID: http://localhost:9000/deletevm
+**Delete a VM based on the UUID**: http://localhost:9000/deletevm
 
-Usage:
+**Usage:**
 
-Create VM:
+```Create VM:```
 
-POST /createvm
+```Operation: POST /createvm```
 
-Input:
+```Input:```
 ```
 {
     "adminUsername": "azureUser",
@@ -33,7 +33,7 @@ Input:
   }
 ```
 
-Output: 
+```Output: ```
 
 ```
 {
@@ -47,25 +47,11 @@ Output:
 }
 ```
 
-Update VM password:
+```Update VM password:```
 
-PUT /updatevm
+```Operation: PUT /updatevm```
 
-Input:
-
-```
-{
-"id": "0e3d75cf7e444b7c9a2357199f640cb3",
-"adminUsername": "azureUser",
-"password": "Welcome@23",
-"vmName": "AKS-VM1",
-"vmSize": "Standard_D2_v3",
-"region": "us-chicago",
-"osImage": "linux"
-}
-```
-
-Output:
+```Input:```
 
 ```
 {
@@ -79,11 +65,25 @@ Output:
 }
 ```
 
-GET VM Lists:
+```Output:```
 
-GET /vmlist
+```
+{
+"id": "0e3d75cf7e444b7c9a2357199f640cb3",
+"adminUsername": "azureUser",
+"password": "Welcome@23",
+"vmName": "AKS-VM1",
+"vmSize": "Standard_D2_v3",
+"region": "us-chicago",
+"osImage": "linux"
+}
+```
 
-OUTPUT:
+```GET VM Lists:```
+
+```Operation: GET /vmlist```
+
+```OUTPUT:```
 
 ```
 [
@@ -98,15 +98,34 @@ OUTPUT:
 }
 ]
 ```
+```GET VM Info Based on UUID:```
 
-DELETE VM Based out of ID:
+```Operation: GET /vmlist?vm="0e3d75cf7e444b7c9a2357199f640cb3"```
 
-DELETE /deletevm
+```OUTPUT:```
+```
+{
+"id": "0e3d75cf7e444b7c9a2357199f640cb3",
+"adminUsername": "azureUser",
+"password": "Welcome@23",
+"vmName": "AKS-VM1",
+"vmSize": "Standard_D2_v3",
+"region": "us-chicago",
+"osImage": "linux"
+}
+```
 
+```DELETE VM Based out of ID:```
+
+```Operation: DELETE /deletevm```
+
+```
+Input:
+```
 ```
 {
     "id": "0e3d75cf7e444b7c9a2357199f640cb3"
 }
 ```
 
-Output: 200 Response
+```Output: 200 Response```
