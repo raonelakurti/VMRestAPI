@@ -76,6 +76,7 @@ GET /vmlist
 OUTPUT:
 
 ```
+[
 {
 "id": "0e3d75cf7e444b7c9a2357199f640cb3",
 "adminUsername": "azureUser",
@@ -85,6 +86,7 @@ OUTPUT:
 "region": "us-chicago",
 "osImage": "linux"
 }
+]
 ```
 
 DELETE VM Based out of ID:
