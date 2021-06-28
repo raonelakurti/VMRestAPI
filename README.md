@@ -1,7 +1,6 @@
 # VMRestAPI to Perform GET, CREATE, DELETE and Update operations.
 
-Run Locally:
-I have used go mod to maintain dependencies.
+Run Locally: I have used go mod to maintain dependencies.
 
 $ go build
 $ ./VMRestAPI
@@ -14,9 +13,9 @@ Update VM based out of UUID: http://localhost:9000/updatevm
 Delete a VM based on the UUID: http://localhost:9000/deletevm
 
 Usage:
-POST Operation:
+Create VM:
 POST /createvm
-
+Input:
 ```
 {
     "adminUsername": "azureUser",
@@ -42,8 +41,9 @@ Output:
 ```
 
 Update VM password:
-PUT /updatevm
 
+PUT /updatevm
+Input:
 ```
 {
 "id": "0e3d75cf7e444b7c9a2357199f640cb3",
@@ -70,7 +70,7 @@ Output:
 }
 ```
 
-GET Operation to list VMs:
+GET VM Lists:
 GET /vmlist
 
 OUTPUT:
