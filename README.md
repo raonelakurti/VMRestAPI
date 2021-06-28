@@ -16,8 +16,11 @@ Update VM based out of UUID: http://localhost:9000/updatevm
 Delete a VM based on the UUID: http://localhost:9000/deletevm
 
 Usage:
+
 Create VM:
+
 POST /createvm
+
 Input:
 ```
 {
@@ -31,6 +34,7 @@ Input:
 ```
 
 Output: 
+
 ```
 {
 "id": "0e3d75cf7e444b7c9a2357199f640cb3",
@@ -46,7 +50,9 @@ Output:
 Update VM password:
 
 PUT /updatevm
+
 Input:
+
 ```
 {
 "id": "0e3d75cf7e444b7c9a2357199f640cb3",
@@ -74,6 +80,7 @@ Output:
 ```
 
 GET VM Lists:
+
 GET /vmlist
 
 OUTPUT:
