@@ -8,8 +8,11 @@ $ ./VMRestAPI
 use below to perform do list, create, update and destroy
 
 Get Existing VM's info: http://localhost:9000/vmlist
+
 Create a new VM: http://localhost:9000/createvm
+
 Update VM based out of UUID: http://localhost:9000/updatevm
+
 Delete a VM based on the UUID: http://localhost:9000/deletevm
 
 Usage:
