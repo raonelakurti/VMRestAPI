@@ -10,7 +10,6 @@ import (
 
 func main() {
 
-	var config Config
 	log.Printf("listening port: %s\n", "9000")
 
 	//create data.json file if does not exists
@@ -27,11 +26,6 @@ func main() {
 	  }
 
 	//start router
-	router := config.NewRouter()
+	router := NewRouter()
 	log.Fatal(http.ListenAndServe(":9000", router))
-}
-
-type Config struct {
-	ListenPort string
-	CryptoURL  string
 }

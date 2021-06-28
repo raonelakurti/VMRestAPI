@@ -18,31 +18,31 @@ type Route struct {
 type Routes []Route
 
 //NewRouter creates a new mux router
-func (conf *Config) NewRouter() *mux.Router {
+func NewRouter() *mux.Router {
 	var routes = Routes{
 		Route{
 			"GetVmsList",
 			"GET",
 			"/vmlist",
-			conf.GetVmsList,
+			GetVmsList,
 		},
 		Route{
 			"CreateVm",
 			"POST",
 			"/createvm",
-			conf.CreateVm,
+			CreateVm,
 		},
 		Route{
 			"UpdateVm",
 			"PUT",
 			"/updatevm",
-			conf.UpdateVm,
+			UpdateVm,
 		},
 		Route{
 			"DeleteVm",
 			"DELETE",
 			"/deletevm",
-			conf.DeleteVm,
+			DeleteVm,
 		},
 	}
 

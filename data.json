@@ -1,1 +1,1 @@
-[]
+[{"id":"1aa0ab6abfab47578be01fd09cbd49a8","adminUsername":"azureUser","password":"Welcome12323","vmName":"AKS-VM1","vmSize":"Standard_D2_v3","region":"us-chicago","osImage":"linux"},{"id":"de321570d7b54bf78de6f7f98486aca5","adminUsername":"azureUser","password":"Welcome!23","vmName":"AKS-VM1","vmSize":"Standard_D2_v3","region":"us-chicago","osImage":"linux"},{"id":"1899eef3c3344a07b7d3698935f17888","adminUsername":"azureUser1","password":"Welcome@23","vmName":"AKS-VM1","vmSize":"Standard_D2_v3","region":"us-chicago","osImage":"linux"}]

@@ -10,7 +10,7 @@ import (
 	"github.com/google/uuid"
 )
 
-func (conf *Config) UpdateVm(w http.ResponseWriter, r *http.Request) {
+func UpdateVm(w http.ResponseWriter, r *http.Request) {
 	var vm Vm
 	body, _ := ioutil.ReadAll(r.Body)
 
@@ -49,7 +49,7 @@ func (conf *Config) UpdateVm(w http.ResponseWriter, r *http.Request) {
 
 }
 
-func (conf *Config) DeleteVm(w http.ResponseWriter, r *http.Request){
+func DeleteVm(w http.ResponseWriter, r *http.Request){
 	var vm Vm
 	body, _ := ioutil.ReadAll(r.Body)
 
@@ -90,7 +90,7 @@ func (conf *Config) DeleteVm(w http.ResponseWriter, r *http.Request){
 	w.WriteHeader(http.StatusOK)
 }
 
-func (conf *Config) CreateVm(w http.ResponseWriter, r *http.Request){
+func CreateVm(w http.ResponseWriter, r *http.Request){
 
 	var vm Vm
 	body, _ := ioutil.ReadAll(r.Body)
@@ -149,7 +149,7 @@ func updateDataFile(vms []Vm) (error){
 	return nil
 }
 
-func (conf *Config) GetVmsList(w http.ResponseWriter, r *http.Request) {
+func GetVmsList(w http.ResponseWriter, r *http.Request) {
 
 	vms, err := readDataFile();
 
